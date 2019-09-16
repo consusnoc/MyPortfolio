@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/consuelo/Desktop/Portfolio/node_modules/gatsby-remark-images/gatsby-ssr'),
+      options: {"plugins":[],"maxWidth":950,"linkImagesToOriginal":false},
+    },{
       plugin: require('/Users/consuelo/Desktop/Portfolio/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]

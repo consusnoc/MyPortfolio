@@ -1,0 +1,29 @@
+$mobile: "(min-width: 320px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+.wrapper {
+    @media #{$mobile} {
+        transform: translate(0,0);
+    }
+    @media #{$tablet}{
+        transform: translate(0, 25%);   
+    }
+    @media #{$desktop}{
+        transform: translate(0%, 50%);
+    }
+
+    p{
+        a{
+            font-weight: bold;
+            color: #3A1C71;
+            text-decoration: none;
+            list-style-type: none;
+            background-image: none;
+        }
+        a:hover {
+            color: #FF6C45;
+        }
+    }
+
+}

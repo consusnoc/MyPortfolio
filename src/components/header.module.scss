@@ -1,0 +1,39 @@
+.header {
+    padding: 1rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    a {
+       text-shadow: none;
+       background-image: none;
+    }
+    img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    font-family: 'MaisonNeueDemi';
+    color: #3A1C71;
+    font-size: .9rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+    background-image: none;
+}
+
+.nav-item:hover {
+    color: #FF6C45;
+}
+
+.active-nav-item {
+    color: #FF6C45;
+}
