@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link , graphql } from 'gatsby'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 
 import arrow from '../../static/icons/left-arrow.png'
@@ -9,23 +10,36 @@ import Layout from '../components/layout'
 
 export const query = graphql`
     query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            frontmatter {
-                title
-                date
+        contentfulBlogPost( slug: { eq: $slug } ) {
+            title
+            publishedDate(formatString: "MMMM Do, YYYY")
+            body {
+                json
             }
-            html
         }
     }
 ` 
 
+
+
 const Project = ( props ) =>  {
+    const options = {
+        renderNode : {
+            "embedded-asset-block": (node) => {
+                const alt = node.data.target.fields.title['en-US']
+                const url = node.data.target.fields.file['en-US'].url
+                return <img alt={alt} src={url} />
+            }
+        }
+    }
+
     return(
         <Layout>
             <Link to='/projects' className={projStyles.backLink}><img src={arrow} alt="arrow"/> Volver</Link>
-            <h1 className={projStyles.title}>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.date}</p>
-            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
+            <h1>{props.data.contentfulBlogPost.title}</h1>
+            <p>Published date: {props.data.contentfulBlogPost.publishedDate}</p>
+            {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            
         </Layout>
     )
 }
