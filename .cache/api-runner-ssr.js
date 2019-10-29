@@ -4,6 +4,9 @@ var plugins = [{
     },{
       plugin: require('/Users/consuelo/Desktop/Portfolio/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
+    },{
+      plugin: require('/Users/consuelo/Desktop/Portfolio/node_modules/gatsby-plugin-intl/gatsby-ssr'),
+      options: {"plugins":[],"path":"/Users/consuelo/Desktop/Portfolio/src/intl","languages":["en","es"],"defaultLanguage":"en","redirect":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

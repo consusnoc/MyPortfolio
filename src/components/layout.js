@@ -5,15 +5,23 @@ import Footer from './footer'
 import '../styles/global.scss'
 import layoutStyles from './layout.module.scss'
 
-const Layout = (props) => {
+import PropTypes from "prop-types"
+import { injectIntl } from "gatsby-plugin-intl"
+
+const Layout = ({ children, intl }) => {
     return(
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>
-                <Header/>
-                {props.children}
+                <Header siteTitle={intl.formatMessage({ id: "title" })}/>
+                {children}
             </div>
             <Footer/>
         </div>
     )
 }
-export default Layout
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+}
+
+export default injectIntl(Layout)
