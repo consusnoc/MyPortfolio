@@ -30,7 +30,6 @@ const Project = ( props ) =>  {
                     const videoUrl = node.data.target.fields.file['en-US'].url
                     return <video width="900" height="auto" controls><source src={videoUrl} type="video/mp4" /></video>
                 }
-                console.log(node)
                 const alt = node.data.target.fields.title['en-US']
                 const url = node.data.target.fields.file['en-US'].url
                 return <img alt={alt} src={url} />

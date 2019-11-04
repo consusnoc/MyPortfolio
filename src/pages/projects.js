@@ -31,6 +31,7 @@ const ProjectsPage = () =>  {
                     return  (
                         <li className={projStyles.post}>
                             <Link to={`/project/${edge.node.slug}`}>
+                              <div className={projStyles.imgPost} dataName={`${edge.node.slug}`} />
                               <h2>{edge.node.title}</h2>
                               <p>{edge.node.publishedDate}</p>
                             </Link>
