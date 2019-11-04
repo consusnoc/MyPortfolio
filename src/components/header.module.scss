@@ -37,6 +37,12 @@
     text-transform: capitalize;
     cursor: pointer;
 }
+.nav-item:hover {
+    color: #FF6C45;
+}
+.active-nav-item {
+    color: #FF6C45;
+}
 
 
 /* Menu Button */
