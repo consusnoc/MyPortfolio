@@ -12,8 +12,8 @@ const Layout = ({ children, intl }) => {
     return(
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>
-                <Header siteTitle={intl.formatMessage({ id: "title" })}/>
-                {children}
+                <Header siteTitle={intl.formatMessage({ id: "title" })}/>            
+                <div className={layoutStyles.pageContent}>{children}</div>
             </div>
             <Footer/>
         </div>

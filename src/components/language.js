@@ -23,7 +23,7 @@ const Language = () => {
                 textDecoration: `none`,
                 textShadow: `none`,
                 //margin: 10,
-                padding: `10px`,
+                padding: `5px 10px`,
                 border: `1px solid #3A1C71`,
                 cursor: `pointer`,
               }}

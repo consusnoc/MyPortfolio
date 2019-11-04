@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import logo from '../../static/logo.png'
+import menuButton from '../../static/icons/menu.png'
 
 import headerStyles from './header.module.scss'
 
@@ -25,6 +26,11 @@ const Header = ({ siteTitle }) => {
     return(
         <header className={headerStyles.header}>
             <div className={headerStyles.logo}><Link to='/'><img src={logo} alt="Logo"/></Link></div>
+            <input className={headerStyles.menuBtn} type="checkbox" id="menu-btn" />
+            <label className={headerStyles.menuIcon} htmlFor="menu-btn">
+                <span className={headerStyles.navicon}></span>
+            </label>
+
             <nav>
                 <ul className={headerStyles.navList}>
                     <li>
@@ -48,7 +54,9 @@ const Header = ({ siteTitle }) => {
 
                     <Language />
                 </ul>
+            
             </nav>
+            
         </header>
     )
 }
