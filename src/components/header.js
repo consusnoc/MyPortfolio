@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import logo from '../../static/logo.png'
-import menuButton from '../../static/icons/menu.png'
 
 import headerStyles from './header.module.scss'
 
