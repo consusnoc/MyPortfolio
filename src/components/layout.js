@@ -13,7 +13,7 @@ const Layout = ({ children, intl }) => {
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>
                 <Header siteTitle={intl.formatMessage({ id: "title" })}/>            
-                <div className={layoutStyles.pageContent}>{children}</div>
+                {children}
             </div>
             <Footer/>
         </div>
