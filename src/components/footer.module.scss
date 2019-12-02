@@ -1,15 +1,33 @@
 .footer {
-    border-top: 1px solid #e1dce9;
+    background-image: url(../../static/footerImg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
     margin: 0;
-    margin-top: 3rem;
-    padding: .5rem 0;
-    display: flex;
-    justify-content: space-between;
+    padding: 2rem 5rem;
+
+    h2 {
+        font-family: 'MaisonNeueDemi', Arial, Helvetica, sans-serif;
+        color: #FFF;
+        margin-top: 1.45rem;
+        margin-bottom: 0;
+    }
 
     p{
+        font-family: 'MaisonNeueBook', Arial, Helvetica, sans-serif;
         font-size: .8rem;
-        margin: 0;
         color: #C3B9D3;
+        margin-top: .5rem;
+    }
+}
+
+.logo {
+    img {
+        height: 30px;
+        width: auto;
+        margin-bottom: 0;
+        display: flex;
     }
 }
 
@@ -17,15 +35,15 @@
     a {
         background-image: none;
         text-decoration: none;
-        margin-left: .5rem;
+        margin-right: .5rem;
 
         img {
             margin: 0;
-            opacity: .3;
+            opacity: 0.8;
 
         }
         img:hover {
-            opacity: 1;
+            opacity: 0.5;
         }
     }
 }

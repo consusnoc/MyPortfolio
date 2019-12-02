@@ -1,10 +1,12 @@
 .header {
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 10%;
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
+    background: #000;
+    position: sticky;
 }
 
 .logo {
@@ -28,8 +30,9 @@
     margin-bottom: 0;
 }
 .nav-item {
-    font-family: 'MaisonNeueDemi';
-    color: #3A1C71;
+    font-family: 'MaisonNeueBook';
+    color: #FFFFFF;
+    text-shadow: none;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;

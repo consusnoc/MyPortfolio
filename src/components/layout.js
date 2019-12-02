@@ -10,11 +10,15 @@ import { injectIntl } from "gatsby-plugin-intl"
 
 const Layout = ({ children, intl }) => {
     return(
-        <div className={layoutStyles.container}>
-            <Header siteTitle={intl.formatMessage({ id: "title" })}/>            
-            <div className={layoutStyles.content}>
-                {children}
+        <div>
+            <Header siteTitle={intl.formatMessage({ id: "title" })}/>  
+
+            <div className={layoutStyles.container}>
+                <div className={layoutStyles.content}>
+                    {children}
+                </div>
             </div>
+            
             <Footer/>
         </div>
     )

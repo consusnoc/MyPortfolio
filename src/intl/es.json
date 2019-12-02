@@ -1,4 +1,20 @@
 {
+    "main_title": "Somewhere between the design world of user personas and polished wireframes lies a logical programming mind that strives towards creating delightful user experiences that both look and function beautifully across any device that can access the web.",
+    "thats_were": "That’s where I love working.",
+    "hi": "Nice to meet you! I'm Consuelo",
+    "presentation_description": "I use my skills as a product designer and my love for front-end coding to create digital products with beautiful on-brand aesthetics and strong interaction design.",
+    "projects": "Proyectos",
+    "projects_description": "These are some design and web projects I’ve been working on lately.",
+    "see_more": "Want to see more? ",
+    "email_me": "Enviame un e-mail!",
+
+    
+    "like_my_work" : "If you liked my work, let’s connect!",
+    "work_opportunities": "I’m always open to discussing product design work or freelance opportunities.",
+
+    
+    
+    
     "title": "Hola! Mi nombre es Consuelo.", 
     "subtitle": "Soy diseñadora UI/UX y desarrolladora web.",
     "description": "Utilizo mis conocimientos de diseño junto con los de desarrollo web para crear productos con una impronta minimalista, funcional y versátil con un fuerte enfoque en el usuario. Me encanta crear experiencias digitales eficientes, fáciles de usar y visualmente atractivas.",
@@ -12,7 +28,6 @@
     "send_me_an_email": " enviarme un email",
 
     
-    "projects": "Proyectos",
     "contact": "contacto",
 
     "my_story": "Soy diseñadora gráfica egresada de la Universidad de Buenos Aires, estudié desarrollo front end y luego en la Universidad Tecnológica Nacional.",

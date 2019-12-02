@@ -1,8 +1,10 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 
 import footerStyles from './footer.module.scss'
 
+import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
+
+import logo from '../../static/logo.png'
 import twitterLogo from '../../static/icons/twitter.svg'
 import instagramLogo from '../../static/icons/instagram.svg'
 import linkedinLogo from '../../static/icons/linkedin.svg'
@@ -10,19 +12,16 @@ import behanceLogo from '../../static/icons/behance.svg'
 import dribbbleLogo from '../../static/icons/dribbble.svg'
 
 const Footer = () =>  {
-    const data = useStaticQuery(graphql`
-        query{
-            site{
-                siteMetadata{
-                    author
-                }
-            }
-        }
-    `)
-    const author = data.site.siteMetadata.author
+
     return(
         <footer className={ footerStyles.footer }>
-            <p>{author} ©2019 </p>
+            <div className={footerStyles.logo}><Link to='/'><img src={logo} alt="Logo"/></Link></div>
+            <h2>
+                <FormattedMessage id="like_my_work" />
+            </h2>
+            <p>
+                <FormattedMessage id="work_opportunities" />
+            </p>
             <div className={ footerStyles.social }>      
                 <a href="https://www.linkedin.com/in/consuelo-romano/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="Logo de Linkedin"/></a>
                 <a href="https://twitter.com/consusnoc" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} alt="Logo de Twitter"/></a>

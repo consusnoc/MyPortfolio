@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-about-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/about.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/index.js"))),
-  "component---src-pages-projects-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/projects.js")))
+  "component---src-pages-projects-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/projects.js"))),
+  "component---src-pages-projects-mini-js": hot(preferDefault(require("/Users/consuelo/Desktop/Portfolio/src/pages/projectsMini.js")))
 }
 
