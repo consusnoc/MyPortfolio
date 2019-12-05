@@ -38,11 +38,12 @@ const Project = ( props ) =>  {
     }
     return(
         <Layout>
-            <Link to='/projects' className={projStyles.backLink}><img src={arrow} alt="arrow"/> Volver</Link>
-            <h1>{props.data.contentfulBlogPost.title}</h1>
-            <p>Published date: {props.data.contentfulBlogPost.publishedDate}</p>
-            {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-            
+            <div className={projStyles.projContainer}>
+                <Link to='/projects' className={projStyles.backLink}><img src={arrow} alt="arrow"/> Volver</Link>
+                <h1 className={projStyles.title}>{props.data.contentfulBlogPost.title}</h1>
+                <p className={projStyles.published}>Published date: {props.data.contentfulBlogPost.publishedDate}</p>
+                {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            </div>
         </Layout>
     )
 }

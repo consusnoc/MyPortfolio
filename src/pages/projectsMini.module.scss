@@ -32,6 +32,8 @@
         color: #777;
         font-size: .8rem;
         line-height: 1rem;
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -65,16 +67,12 @@
     background-position: center center;
     background-size: cover;
 }
-/*
+
 @media (max-width:768px) {
     .post {
         width: 100%;
-    }
-    .post .img-post {
-        height: 250px;
     }
     .img-post[dataname="openMarket"] {
         background-position: 75% center;
     }
 }
-*/

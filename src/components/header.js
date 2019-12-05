@@ -27,8 +27,6 @@ const Header = ({ siteTitle }) => {
     `)
     const pdf = data.allFile.edges[0].node.publicURL;
    
-        
-        console.log(pdf)
     return(
         <header className={headerStyles.header}>
             <div className={headerStyles.logo}><Link to='/'><img src={logo} alt="Logo"/></Link></div>
