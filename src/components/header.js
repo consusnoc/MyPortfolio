@@ -14,14 +14,21 @@ const Header = ({ siteTitle }) => {
     const intl = useIntl();
     const data = useStaticQuery(graphql` 
     query {
-        site {
-          siteMetadata {
-            title
-          }
+        
+        allFile(filter: { extension: { eq: "pdf" } }) {
+            edges {
+              node {
+                publicURL
+              }
+            }
         }
-      }
+               
+    }
     `)
-
+    const pdf = data.allFile.edges[0].node.publicURL;
+   
+        
+        console.log(pdf)
     return(
         <header className={headerStyles.header}>
             <div className={headerStyles.logo}><Link to='/'><img src={logo} alt="Logo"/></Link></div>
@@ -46,9 +53,9 @@ const Header = ({ siteTitle }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to='/contact/'>
-                            <FormattedMessage id="contact" />
-                        </Link>
+                        <a className={headerStyles.navItem} href={pdf} target="_blank">
+                            <FormattedMessage id="resume" />
+                        </a>
                     </li>
 
                     <Language />

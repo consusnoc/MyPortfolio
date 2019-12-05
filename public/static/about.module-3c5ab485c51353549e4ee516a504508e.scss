@@ -1,0 +1,33 @@
+.about-container {
+    margin: 0 auto;
+    max-width: 950px;
+    min-height: 1400px;
+}
+.about-title {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 0;
+}
+.about-content {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   img {
+       margin-bottom: 2.5rem;
+   }
+
+}
+
+
+@media (max-width:768px){
+    .about-content {
+        padding: 0 1rem;
+    }
+    .about-container {
+        min-height: 0;
+    }
+}
