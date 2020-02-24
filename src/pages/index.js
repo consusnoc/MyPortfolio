@@ -17,9 +17,21 @@ const IndexPage = () => {
       <Layout>
          <div className={indexStyles.wrapper}>
             <p className={indexStyles.title}> 
+
                <FormattedMessage id="main_title" />
+               <span className={indexStyles.yellow}><FormattedMessage id="main_title1"/></span>
+               <FormattedMessage id="and" />
+               <span className={indexStyles.lilac}><FormattedMessage id="main_title2"/></span>
+               <FormattedMessage id="lies_a" />
+               <span className={indexStyles.red}><FormattedMessage id="main_title3"/></span>
+               <FormattedMessage id="that_strives_towards" />
+               <span className={indexStyles.lightBlue}><FormattedMessage id="main_title4"/></span>
+               <FormattedMessage id="that_both" />
+               <span className={indexStyles.orange}><FormattedMessage id="main_title5"/></span>
+               <FormattedMessage id="across_any_device" />
+
                <br/>
-               <FormattedMessage id="thats_were" />
+               <span className={indexStyles.blue}><FormattedMessage id="thats_were"/></span>
             </p>
          </div>
          <div className={indexStyles.presentation}>
@@ -37,14 +49,14 @@ const IndexPage = () => {
             <h1 className={indexStyles.titleStyles}>
                   <FormattedMessage id="projects" />
             </h1>
-            <p>
+            {/* <p>
                <FormattedMessage id="projects_description" />
                <br/>
                <FormattedMessage id="see_more" />
                <a href="mailto:hello@consueloromano.com">
                   <FormattedMessage id="email_me" />
                </a>
-            </p>
+            </p> */}
             <ProjectsMini />
             <Link to="/projects/">
                <Button>All Projects</Button>

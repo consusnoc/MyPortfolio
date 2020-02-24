@@ -6,7 +6,11 @@
     height: 80px;
     align-items: center;
     background: #000;
-    position: sticky;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*border-top: 3px solid #D9C3ED;*/
+    z-index: 9999;
 }
 
 .logo {
@@ -33,8 +37,8 @@
     font-family: 'MaisonNeueBook';
     color: #FFFFFF;
     text-shadow: none;
-    font-size: .9rem;
-    margin-right: 1.3rem;
+    font-size: 1rem;
+    margin-right: 1.5rem;
     text-decoration: none;
     background-image: none;
     text-transform: capitalize;
@@ -44,7 +48,8 @@
     color: #D9C3ED;
 }
 .active-nav-item {
-    color: #2961FF;
+    color: #D9C3ED;
+    font-weight: 600;
 }
 
 

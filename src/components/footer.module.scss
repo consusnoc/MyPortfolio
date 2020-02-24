@@ -6,19 +6,21 @@
    
     margin: 0;
     padding: 2rem 5rem;
+    margin-top: 4.5rem;
 
     h2 {
         font-family: 'MaisonNeueDemi', Arial, Helvetica, sans-serif;
-        color: #FFF;
+        color: #FAFAFA;
         margin-top: 1.45rem;
         margin-bottom: 0;
     }
+
 
     p{
         font-family: 'MaisonNeueBook', Arial, Helvetica, sans-serif;
         font-size: .8rem;
         color: #C3B9D3;
-        margin-top: .5rem;
+        margin: 0rem 0 1rem;
     }
 }
 
@@ -32,10 +34,12 @@
 }
 
 .social {
+    margin-top: 1.5rem;
     a {
         background-image: none;
         text-decoration: none;
         margin-right: .5rem;
+        
 
         img {
             margin: 0;
@@ -46,6 +50,16 @@
             opacity: 0.5;
         }
     }
+}
+
+.contact {
+    font-family: 'MaisonNeueDemi', Arial, Helvetica, sans-serif;
+    color: #FAFAFA;
+    font-size: 1.2rem;
+    text-shadow: none;
+}
+.contact:hover{
+    color: #2961FF;
 }
 
 @media (max-width: 768px) {

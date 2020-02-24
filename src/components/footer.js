@@ -22,6 +22,8 @@ const Footer = () =>  {
             <p>
                 <FormattedMessage id="work_opportunities" />
             </p>
+            <a href="mailto:hello@consueloromano.com" className={footerStyles.contact}>hello@consueloromano.com</a>
+
             <div className={ footerStyles.social }>      
                 <a href="https://www.linkedin.com/in/consuelo-romano/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="Logo de Linkedin"/></a>
                 <a href="https://twitter.com/consusnoc" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} alt="Logo de Twitter"/></a>
