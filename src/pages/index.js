@@ -11,11 +11,15 @@ import presentationImg from '../../static/presentation_image.png'
 
 import ProjectsMini from './projectsMini'
 
+import UncontrolledLottie from '../components/UncontrolledLottie';
+
+
 const IndexPage = () => {
    const intl = useIntl()
    return(
       <Layout>
          <div className={indexStyles.wrapper}>
+            
             <p className={indexStyles.title}> 
 
                <FormattedMessage id="main_title" />
@@ -42,7 +46,8 @@ const IndexPage = () => {
                <FormattedMessage id="presentation_description" />
             </p>
             
-            <div className={indexStyles.presentationImgContainer}><img src={presentationImg} className={indexStyles.presentationImg} alt="Work description"/></div>
+            {/* <div className={indexStyles.presentationImgContainer}><img src={presentationImg} className={indexStyles.presentationImg} alt="Work description"/></div> */}
+            <UncontrolledLottie />
 
          </div>
          <div className={indexStyles.projects}>

@@ -23,12 +23,45 @@ $desktop: "(min-width: 1024px)";
     color: #D9C3ED;
   }
 
+  /* Hover effects 
+  .lilac:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #D9C3ED;
+    
+  }
+  .light-blue:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #91D3ED;
+  }
+  .orange:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #F99F00;
+  }
+  .red:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #EF4832;
+  }
+  .blue:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #2961FF;
+  }
+  .yellow:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px #FEDA01;
+  }*/
+
+//SVG Source
+#circle{
+stroke:#FFF48D;
+}
+
 
 .title {
     font-family: 'MaisonNeueDemi', Arial, Helvetica, sans-serif;
     text-align: center;
     color: #FAFAFA;
     margin: 0;
+    cursor: default;
     
     @media #{$mobile} {
         font-size: 24px;
