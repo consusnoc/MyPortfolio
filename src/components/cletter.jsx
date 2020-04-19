@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../lotties/eye.json'
+import animationData from '../lotties/canimation.json'
 
-class UncontrolledLottie extends Component {
+class CLetter extends Component {
 
 
   render(){
@@ -17,18 +17,18 @@ class UncontrolledLottie extends Component {
     };
 
     var styles = {
-        margin: '0',
+        margin: '1.5rem',
     }
 
     return(
       <div style={styles}>
         <Lottie options={defaultOptions}
-              height={560}
-              width={900}
+              height={50}
+              width={50}
         />
       </div>
     )
   }
 }
 
-export default UncontrolledLottie
+export default CLetter

@@ -11,7 +11,7 @@ const ProjectsPage = () =>  {
     const intl = useIntl()
     const data = useStaticQuery(graphql`
       query {
-        allContentfulBlogPost ( sort: { fields: publishedDate, order: DESC } ) {
+        allContentfulBlogPost (sort: {fields: publishedDate, order: DESC}, limit: 3) {
           edges {
             node {
               title

@@ -13,15 +13,29 @@ import ProjectsMini from './projectsMini'
 
 import UncontrolledLottie from '../components/UncontrolledLottie';
 
+import WaveDivider from '../components/divider';
+
 
 const IndexPage = () => {
    const intl = useIntl()
    return(
       <Layout>
          <div className={indexStyles.wrapper}>
-            
+            <div className={indexStyles.leftsvg}></div>
+            <div className={indexStyles.rightsvg}></div>
             <p className={indexStyles.title}> 
 
+               {
+               /* SHORTER PHRASE
+               <FormattedMessage id="hi_im" />
+               <br/>
+               <span className={indexStyles.orange}><FormattedMessage id="product_designer"/></span>
+               <FormattedMessage id="and" />
+               <span className={indexStyles.blue}><FormattedMessage id="ui_developer"/></span>
+               <br/>
+               <FormattedMessage id="header_title" /> */}
+
+               {/* LONGER PHRASE */}
                <FormattedMessage id="main_title" />
                <span className={indexStyles.yellow}><FormattedMessage id="main_title1"/></span>
                <FormattedMessage id="and" />
@@ -50,6 +64,9 @@ const IndexPage = () => {
             <UncontrolledLottie />
 
          </div>
+
+         <WaveDivider />
+         
          <div className={indexStyles.projects}>
             <h1 className={indexStyles.titleStyles}>
                   <FormattedMessage id="projects" />
