@@ -5,6 +5,8 @@ import { Button } from '../components/button'
 
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 
+import Slider from '../components/slider'
+
 import indexStyles from './index.module.scss'
 
 import presentationImg from '../../static/me.jpg'
@@ -103,6 +105,16 @@ const IndexPage = () => {
             <Link to="/projects/">
                <Button><FormattedMessage id="all_projects" /></Button>
             </Link>
+         </div>
+         <div className={indexStyles.dribbbleContainer}>
+            <h2 className={indexStyles.dribbbleTitle}>
+               Check out my latest Dribbble shots!
+            </h2>
+            
+            <Slider/>
+
+            <p className={indexStyles.instagramTxt}> You can also find me on Instagram as <a href="https://www.instagram.com/consuelodesigns/" target="_blank" rel="noopener noreferrer">@consuelodesigns</a></p>
+
          </div>
       </Layout>
    )

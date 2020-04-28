@@ -19,6 +19,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     { 
       resolve: `gatsby-transformer-remark`,
@@ -60,6 +61,12 @@ module.exports = {
         // option to redirect to `/ko` when connecting `/`
         redirect: true,
       },
+    },
+    {
+      resolve: `gatsby-source-dribbble`,
+      options: {
+        access_token: process.env.DRIBBBLE_ACCESS_TOKEN,
+      }
     }
   ],
 }

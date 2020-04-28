@@ -110,7 +110,7 @@ stroke:#FFF48D;
     display: flex;
 }
 
-.presentation, .projects, .skills{
+.presentation, .projects, .skills, .dribbbleContainer{
     text-align: center;
     //padding: 7% 8%;
 
@@ -183,6 +183,20 @@ stroke:#FFF48D;
     line-height: 36px;
 }
 
+.dribbbleContainer {
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.dribbbleTitle {
+    font-family: 'MaisonNeueDemi', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+.instagramTxt {
+    margin-top: 2.5rem;
+}
 /*
 .wrapper {
 

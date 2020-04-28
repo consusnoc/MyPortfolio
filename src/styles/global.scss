@@ -642,3 +642,10 @@ h1 {
 p {
   font-family: 'MaisonNeueLight', sans-serif;
 }
+.slick-slide {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000 !important;
+}
