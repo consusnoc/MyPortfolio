@@ -7,26 +7,61 @@ import aboutStyles from './about.module.scss'
 
 import { FormattedMessage, injectIntl, useIntl  } from "gatsby-plugin-intl"
 
+import WaveDivider from '../components/divider';
+
 const AboutPage = () => {
     const intl = useIntl()
     return (
         <Layout>
+            <h1 className={aboutStyles.aboutTitle}><FormattedMessage id="about_me" /></h1>
+            
             <div className={aboutStyles.aboutContainer}>
-                <h1 className={aboutStyles.aboutTitle}>
-                    <FormattedMessage id="about_me" />
-                </h1>
+
                 <div className={aboutStyles.aboutContent}>
-                    <img src={me} alt='Photo of myself at the beach' />
-                    <p> <FormattedMessage id="my_story" /></p>
-                    <p> <FormattedMessage id="my_story_tech" /> <br/>
-                        <a href="https://www.youtube.com/watch?v=KSTk9P0yh2Y&t=331s" target="_blank" rel="noopener noreferrer">
-                            <FormattedMessage id="documentary" />
-                        </a>
-                    </p>
-                    <p><FormattedMessage id="free_time" /></p>
-                
+                    <div className={aboutStyles.leftContent}>
+                        <h2 className={aboutStyles.titleStylesh2}> <FormattedMessage id="my_story_tech" /></h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KSTk9P0yh2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <WaveDivider />
+                <div className={aboutStyles.aboutText}>
+                    <div className={aboutStyles.journey}>
+                        <h3 className={aboutStyles.titleStylesh3}>
+                            <FormattedMessage id="my_journey" />
+                        </h3>
+                        <p> <FormattedMessage id="my_story1" /></p>
+                        <p><FormattedMessage id="my_story2" /></p>
+                    </div>
+                    <div className={aboutStyles.skillsValuesContainer}>
+                        <div className={aboutStyles.skills}>
+                            <h3 className={aboutStyles.titleStylesh3}>
+                                <FormattedMessage id="skills" />
+                            </h3>
+                            <ul>
+                                <li><FormattedMessage id="ux" /></li> 
+                                <li><FormattedMessage id="ui" /></li>
+                                <li><FormattedMessage id="ixd" /></li>
+                                <li><FormattedMessage id="branding" /></li>
+                                <li><FormattedMessage id="logos" /></li>
+                            </ul>
+                        </div>
+                        <div className={aboutStyles.values}>
+                            <h3 className={aboutStyles.titleStylesh3}>
+                                <FormattedMessage id="values" />
+                            </h3>
+                            <ul>
+                                <li><FormattedMessage id="good_design" /></li> 
+                                <li><FormattedMessage id="learn" /></li>
+                                <li><FormattedMessage id="problem" /></li>
+                                <li><FormattedMessage id="simple" /></li>
+                            </ul>
+          
+                        </div>
+                    </div>
+                </div>
+        
             </div>
+            
         </Layout>
     )
 }

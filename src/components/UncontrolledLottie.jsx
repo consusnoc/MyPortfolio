@@ -17,7 +17,7 @@ class UncontrolledLottie extends Component {
     };
 
     var styles = {
-        margin: '0',
+        margin: '50px 0',
     }
 
     return(

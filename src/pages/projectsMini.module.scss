@@ -80,6 +80,12 @@
     background-position: center center;
     background-size: cover;
 }
+.img-post[dataname="rcdhotels"] {
+    background-image: url(../../static/rcdHotels.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 @media (max-width:768px) {
     .post {

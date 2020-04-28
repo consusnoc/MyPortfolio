@@ -8,6 +8,8 @@ import projStyles from './project.module.scss'
 
 import Layout from '../components/layout'
 
+import { Button } from '../components/button'
+
 export const query = graphql`
     query($slug: String!) {
         contentfulBlogPost( slug: { eq: $slug } ) {
@@ -43,6 +45,9 @@ const Project = ( props ) =>  {
                 <h1 className={projStyles.title}>{props.data.contentfulBlogPost.title}</h1>
                 <p className={projStyles.published}>Published date: {props.data.contentfulBlogPost.publishedDate}</p>
                 {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+                <Link to="/projects/" className={projStyles.centerButton}>
+                    <Button>Back to Projects</Button>
+                </Link>
             </div>
         </Layout>
     )

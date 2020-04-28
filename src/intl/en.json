@@ -17,12 +17,17 @@
 
     "thats_were": "That’s where I love working.",
 
-    "hi": "Nice to meet you! I'm Consuelo",
-    "presentation_description": "I use my skills as a product designer and my love for front-end coding to create digital products with beautiful on-brand aesthetics and strong interaction design.",
+    "hi": "Nice to meet you!",
+    "presentation_description1": "I use my skills as a product designer and my love for front-end coding to create digital products with beautiful on-brand aesthetics and strong interaction design.",
+    "presentation_description2": "I love creating personal visual experiences with an emphasis on clean type and expressive colors.",
+    "skills": "Skills",
     "projects": "Projects",
     "projects_description": "These are some design and web projects I’ve been working on lately.",
     "see_more": "Want to see more? ",
     "email_me": "E-mail me!",
+
+    "more_about_me" : "More About Me",
+    "all_projects": "See All Projects",
 
     "like_my_work" : "If you liked my work, let’s connect!",
     "work_opportunities": "I’m always open to discussing product design work or freelance opportunities.",
@@ -43,10 +48,27 @@
     "contact": "contact",
     "resume": "resume",
 
-    "my_story": "I've been working as a product designer and web developer for three years. I've worked in a variety of roles and companies, first as a freelance designer making promotional material for small companies and then I started learning code and programming. I worked as a frontend developer for a marketing agency, collaborating in the development and implementation of two internal web applications, using HTML, CSS and presentational JavaScript to build the user interface. Now I’m working as a product designer and developer at a consulting agency, where I not only design and create products for clients but also help with making layout and applying functionality with code.",
-    "my_story_tech": "Technology has led me to a new world that I had never imagined. I took part in a GSMA documentary where I tell my personal story and how digital inclusion has changed my life.",
+    "my_journey": "My journey through design",
+
+    "my_story1": "I’ve been working as a product designer and web developer for more than five years now. I’ve worked in a variety of roles and companies, first as a freelance designer making promotional material for small companies and then I started learning code and programming. I worked as a UI developer for a marketing agency, collaborating closely with the UI/UX Design Lead  to translate high fidelity mockups into functional code using HTML, CSS and JavaScript frameworks and libraries. Then I started getting interested in designing user interfaces and experiences and later in product design. I have a bachelor degree in Graphic Design so it was easy for me to make that transition.",
+    "my_story2": "From that moment on I’ve been working as a product designer at consulting agencies, startups and also doing some freelancing myself. I love working with different kinds of clients because I never get bored. I pay a lot of attention to details and always strive towards delivering the best solutions, not only for customers but also for business. I love branding design as well, I think a key aspect as a product designer is being able to see the project from start-to-end: from recognizing an opportunity and understanding the customer's needs through to final delivery.",
+    "my_story_tech": "On a personal level, technology has led me to a new world that I had never imagined. I took part in a GSMA documentary where I tell my personal story and how digital inclusion has changed my life.",
     "documentary": "Watch Digital Inclusion documentary here.",
     "free_time": "In my spare time I like to read, listen to podcasts and draw.",
+    "values": "values",
+
+    "ux": "User experience design (ux)",
+    "ui": "Web and user interface design (ui)",
+    "ixd":  "Interaction design",
+    "branding": "Branding",
+    "logos": "Logo & identity design",
+
+    "good_design": "Good design is good business",
+    "learn": "Learn something new everyday",
+    "problem": "Get to the root of the problem.",
+    "simple": "Keep it simple.",
+
+
 
     "contact_me": "Contact me!",
     "send_mail": "You can send me an email to: "
