@@ -66,7 +66,7 @@ module.exports = {
       resolve: `gatsby-source-dribbble`,
       options: {
         access_token: process.env.DRIBBBLE_ACCESS_TOKEN,
-      }
-    }
+      },
+    },
   ],
 }

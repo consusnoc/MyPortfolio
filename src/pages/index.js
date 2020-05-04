@@ -52,6 +52,7 @@ const IndexPage = () => {
                <span className={indexStyles.blue}><FormattedMessage id="thats_were"/></span> */}
             </p>
          </div>
+         
          {/* NICE TO MEET YOU */}
          <div className={indexStyles.presentation}>
             <div className={indexStyles.presentationImgContainer}>
