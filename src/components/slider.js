@@ -42,7 +42,6 @@ export default () => {
         }
     }
   `)
-  console.log(data);
   return (
     <Slider {...settings}>
         {data.allDribbbleShot.nodes.map(shot => (
