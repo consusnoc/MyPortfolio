@@ -27,16 +27,16 @@ const IndexPage = () => {
             <div className={indexStyles.rightsvg}></div>
             <p className={indexStyles.title}> 
 
-               { /* SHORTER PHRASE
+               { /* SHORTER PHRASE*/ }
                <FormattedMessage id="hi_im" />
                <br/>
                <span className={indexStyles.orange}><FormattedMessage id="product_designer"/></span>
                <FormattedMessage id="and" />
                <span className={indexStyles.blue}><FormattedMessage id="ui_developer"/></span>
                <br/>
-               <FormattedMessage id="header_title" /> */ }
+               <FormattedMessage id="header_title" /> 
 
-               {/* LONGER PHRASE */}
+               {/* LONGER PHRASE 
                <FormattedMessage id="main_title" />
                <span className={indexStyles.yellow}><FormattedMessage id="main_title1"/></span>
                <FormattedMessage id="and" />
@@ -49,7 +49,7 @@ const IndexPage = () => {
                <span className={indexStyles.orange}><FormattedMessage id="main_title5"/></span>
                <FormattedMessage id="across_any_device" />
                <br/>
-               <span className={indexStyles.blue}><FormattedMessage id="thats_were"/></span> 
+               <span className={indexStyles.blue}><FormattedMessage id="thats_were"/></span> */}
             </p>
          </div>
          {/* NICE TO MEET YOU */}
