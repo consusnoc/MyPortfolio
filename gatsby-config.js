@@ -18,6 +18,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       }
     },
+    {
+      resolve: `gatsby-source-dribbble`,
+      options: {
+        access_token: process.env.DRIBBBLE_ACCESS_TOKEN,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -60,12 +66,6 @@ module.exports = {
         defaultLanguage: `en`,
         // option to redirect to `/ko` when connecting `/`
         redirect: true,
-      },
-    },
-    {
-      resolve: `gatsby-source-dribbble`,
-      options: {
-        access_token: process.env.DRIBBBLE_ACCESS_TOKEN,
       },
     },
   ],
