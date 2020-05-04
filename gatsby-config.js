@@ -3,10 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-require('dotenv').config({
-	path: `.env.${process.env.NODE_ENV}`
-})
-
 module.exports = {
   /* Your site config here */
   siteMetadata : {
@@ -24,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-dribbble',
       options: {
-        access_token: `${process.env.DRIBBBLE_ACCESS_TOKEN}`,
+        access_token: process.env.DRIBLE_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-sass`,
