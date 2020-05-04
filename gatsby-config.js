@@ -19,9 +19,9 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-dribbble`,
+      resolve: 'gatsby-source-dribbble',
       options: {
-        access_token: process.env.DRIBBBLE_ACCESS_TOKEN,
+        accessToken: `${process.env.DRIBBBLE_ACCESS_TOKEN}`,
       },
     },
     `gatsby-plugin-sass`,
